@@ -3,6 +3,8 @@
 A simple Command-line interface (CLI) that builds upon the existing Android Debug Bridge (ADB) to 
 provide better support when dealing with running adb commands on more than one device.
 
+Inspired by [Paulo Costa](https://github.com/paulombcosta) with [adb-extended](https://github.com/paulombcosta/adb-extended).
+
 ## Motivation
 
 ADB does not support some commands on multiple devices.
