@@ -29,7 +29,7 @@ Uncompress it to `/opt/`.
   tar -C /opt/ -xvzf scala-2.11.7.tgz
 ```
 
-Add Scala to your $PATH by adding this line to .bashrc or .zshrc inside your home directory.
+Add Scala to your $PATH by adding this line to .profile or .bashrc or .zshrc inside your home directory.
 
 ```bash
   PATH="$PATH:/opt/scala-2.11.7/bin"
