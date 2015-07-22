@@ -69,7 +69,7 @@ object ADBe {
       val deviceName = device(3)
       val deviceModel = device(4)
       val deviceId = device.head
-      println(s"(${key + 1}) $deviceId - $deviceName - $deviceModel")
+      println(s"${key + 1} -> $deviceId - $deviceName ** $deviceModel")
     }
 
     println()
