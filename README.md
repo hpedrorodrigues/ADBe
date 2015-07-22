@@ -29,7 +29,7 @@ Note: The **adbe** file that is located in the project root is just a **symbolic
 
 ## Requirements
 
-**Scala 2.11.5** and **ADB** in your PATH.
+**Scala** 2.11.5 or greater and **ADB** in your PATH.
 
 ## More
 
