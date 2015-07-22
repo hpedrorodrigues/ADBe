@@ -29,7 +29,7 @@ Note: The **adbe** file that is located in the project root is just a **symbolic
 
 ## Requirements
 
-- Scala 2.11.5 and adb on PATH.
+**Scala 2.11.5** and **ADB** in your PATH.
 
 ## More
 
@@ -52,4 +52,4 @@ contact [me](https://github.com/hpedrorodrigues) for any non public concerns.
 
 ## References
 
-- [Getting started with Scala](http://www.scala-lang.org/documentation/getting-started.html)
+[Getting started with Scala](http://www.scala-lang.org/documentation/getting-started.html)
