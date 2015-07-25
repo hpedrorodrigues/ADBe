@@ -14,7 +14,7 @@ like this:
 
 ![ADB](./images/adb.png)
 
-But now if you run with adbe you will get this:
+But if you run with adbe you will get this:
 
 ![ADBe](./images/adbe.png)
 
@@ -26,16 +26,9 @@ Giving the option to run this command on individual devices or on all of them.
 - Move adbe.scala or adbe.rb file that is located in src to the folder you want and add to the path.
 - Now simply run the command `adbe`.
 
-Note: The **adbe** file that is located in the project root is just a **symbolic link** and 
-**don't** duty be used.
-
 ## Requirements
 
-In your PATH:
-
-- ADB
-- Scala 2.11.5 or greater
-- Ruby 2.2.1 or greater
+ADB, Scala 2.11.5 or greater or Ruby 2.2.1 or greater in your PATH
 
 ## More
 
@@ -59,3 +52,4 @@ contact [me](https://github.com/hpedrorodrigues) for any non public concerns.
 ## References
 
 [Getting started with Scala](http://www.scala-lang.org/documentation/getting-started.html)
+[Getting started with Ruby](http://ruby-doc.org/gettingstarted/)
