@@ -28,7 +28,7 @@ Giving the option to run this command on individual devices or on all of them.
 
 ## Requirements
 
-ADB, Scala 2.11.5 or greater or Ruby 2.2.1 or greater in your PATH
+ADB, Scala 2.11.5 or greater or Ruby 2.2.1 or greater, in your PATH.
 
 ## More
 
@@ -51,5 +51,5 @@ contact [me](https://github.com/hpedrorodrigues) for any non public concerns.
 
 ## References
 
-[Getting started with Scala](http://www.scala-lang.org/documentation/getting-started.html)
-[Getting started with Ruby](http://ruby-doc.org/gettingstarted/)
+- [Getting started with Scala](http://www.scala-lang.org/documentation/getting-started.html)
+- [Getting started with Ruby](http://ruby-doc.org/gettingstarted/)
