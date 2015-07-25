@@ -23,7 +23,7 @@ Giving the option to run this command on individual devices or on all of them.
 ## Usage
 
 - Download project.
-- Move adbe.scala file that is located in src to the folder you want and add to the path.
+- Move adbe.scala or adbe.rb file that is located in src to the folder you want and add to the path.
 - Now simply run the command `adbe`.
 
 Note: The **adbe** file that is located in the project root is just a **symbolic link** and 
@@ -31,7 +31,11 @@ Note: The **adbe** file that is located in the project root is just a **symbolic
 
 ## Requirements
 
-**Scala** 2.11.5 or greater and **ADB** in your PATH.
+In your PATH:
+
+- ADB
+- Scala 2.11.5 or greater
+- Ruby 2.2.1 or greater
 
 ## More
 

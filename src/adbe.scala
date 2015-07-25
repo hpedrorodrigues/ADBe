@@ -6,9 +6,7 @@ import scala.sys.process._
 import scala.io.StdIn._
 
 object TypeOptions {
-  val All = "all"
   val Quit = "quit"
-  val SimpleAll = "a"
   val SimpleQuit = "q"
 }
 
@@ -17,7 +15,6 @@ object Messages {
   val Usage = "You must pass some argument"
   val MultipleDevices = "You have more than one device. In which device will be run?"
   val TypeDeviceNumber = "Enter 'device number' to run on a device"
-  val TypeAllDevices = "Enter 'all' to run on all devices"
   val TypeCancel = "Enter 'quit' to exit"
   val InvalidOption = "Invalid option"
   val InvalidDevice = "Invalid device"
@@ -74,7 +71,6 @@ object ADBe {
 
     println()
     println(Messages.TypeDeviceNumber)
-    println(Messages.TypeAllDevices)
     println(Messages.TypeCancel)
 
     val selectedOption = readLine()
@@ -89,11 +85,6 @@ object ADBe {
       }
     } else {
       selectedOption match {
-        case TypeOptions.All | TypeOptions.SimpleAll =>
-          for (index <- devicesInfo) {
-            val device = index.split("\\s").filter(!_.isEmpty)
-            ADBe.runOnDevice(args, device.head)
-          }
         case TypeOptions.Quit | TypeOptions.SimpleQuit => println()
         case _ => println(Messages.InvalidOption)
       }
