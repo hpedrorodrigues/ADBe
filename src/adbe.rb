@@ -1,13 +1,16 @@
 #!/usr/bin/env ruby
 
 class TypeOptions
+
   class << self
     def quit; 'quit' end
     def simple_quit; 'q' end
   end
+
 end
 
 class Messages
+
   class << self
     def usage; 'You must pass some argument' end
     def multiple_devices; 'You have more than one device. In which device will be run?' end
@@ -16,9 +19,11 @@ class Messages
     def invalid_option; 'Invalid option' end
     def invalid_device; 'Invalid device' end
   end
+
 end
 
 class Commands
+
   class << self
     def independents; %w(devices version start-server kill-server connect disconnect help) end
     def devices_info; 'adb devices -l' end
@@ -26,17 +31,21 @@ class Commands
     def adb; 'adb' end
     def run_on_device; 'adb -s' end
   end
+
 end
 
 class Util
+
   class << self
     def is_number (string)
       true if Float(string) rescue false
     end
   end
+
 end
 
 class ADBe
+
   class << self
     def serials
       %x( #{Commands.devices} ).lines.map(&:chomp).select { |l| !l.empty? }.drop(1).map { |l| l.split("\t")[0]}
@@ -89,9 +98,11 @@ class ADBe
       end
     end
   end
+
 end
 
 class Runner
+
   class << self
     def main(args)
       if args.empty?
@@ -103,6 +114,7 @@ class Runner
       end
     end
   end
+
 end
 
 Runner.main ARGV
