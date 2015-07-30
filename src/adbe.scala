@@ -11,7 +11,6 @@ object TypeOptions {
 }
 
 object Messages {
-
   val Usage = "You must pass some argument"
   val MultipleDevices = "You have more than one device. In which device will be run?"
   val TypeDeviceNumber = "Enter 'device number' to run on a device"
@@ -21,7 +20,6 @@ object Messages {
 }
 
 object Commands {
-
   val Independents = List("devices", "version", "start-server", "kill-server", "connect", "disconnect", "help")
   val DevicesInfo = Seq("adb", "devices", "-l")
   val Devices = Seq("adb", "devices")
@@ -55,9 +53,7 @@ object ADBe {
   }
 
   def handleToMultipleDevices(args: List[String]) = {
-    println()
-    println(Messages.MultipleDevices)
-    println()
+    println(s"\n${Messages.MultipleDevices}\n")
 
     val devicesInfo = ADBe.devicesInfo
 
@@ -69,8 +65,7 @@ object ADBe {
       println(s"${key + 1} -> $deviceId - $deviceName ** $deviceModel")
     }
 
-    println()
-    println(Messages.TypeDeviceNumber)
+    println(s"\n${Messages.TypeDeviceNumber}")
     println(Messages.TypeCancel)
 
     val selectedOption = readLine()
@@ -95,7 +90,6 @@ object ADBe {
 object Runner {
 
   def main(args: Array[String]) {
-
     val argsList = args.toList
     if (args.length == 0) {
       println(Messages.Usage)
