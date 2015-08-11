@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Adbe by hpedrorodrigues</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Adbe</h1>
+        <h2>A simple CLI to extend some ADB commands on multiple devices</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/hpedrorodrigues/ADBe/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/hpedrorodrigues/ADBe/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/hpedrorodrigues/ADBe" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="adbe" class="anchor" href="#adbe" aria-hidden="true"><span class="octicon octicon-link"></span></a>ADBe</h1>
+
+<p>A simple Command-line interface (CLI) that builds upon the existing Android Debug Bridge (ADB) to 
+provide better support when dealing with running adb commands on more than one device.</p>
+
+<p>Inspired by <a href="https://github.com/paulombcosta">Paulo Costa</a> with <a href="https://github.com/paulombcosta/adb-extended">adb-extended</a>.</p>
+
+<h2>
+<a id="motivation" class="anchor" href="#motivation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Motivation</h2>
+
+<p>ADB does not support some commands on multiple devices.</p>
+
+<p>If you run a simple command like <code>adb shell</code> with multiple connected devices results in an error 
+like this:</p>
+
+<p><img src="./images/adb.png" alt="ADB"></p>
+
+<p>But if you run with adbe you will get this:</p>
+
+<p><img src="./images/adbe.png" alt="ADBe"></p>
+
+<p>Giving the option to run this command on individual devices or on all of them.</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<ul>
+<li>Download project.</li>
+<li>Move adbe.scala or adbe.rb file that is located in src to the folder you want and add to the path.</li>
+<li>Now simply run the command <code>adbe</code>.</li>
+</ul>
+
+<h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
+
+<p>ADB, Scala 2.11.5 or greater or Ruby 2.2.1 or greater, in your PATH.</p>
+
+<h2>
+<a id="more" class="anchor" href="#more" aria-hidden="true"><span class="octicon octicon-link"></span></a>More</h2>
+
+<p>For more information on installing the scala check out facilities <a href="./INSTALLATION.md">page</a>.</p>
+
+<p>ADBe is a work in progress, feel free to improve it.</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>ADBe is released under the MIT license. See <a href="./LICENSE">LICENSE</a> for details.</p>
+
+<h2>
+<a id="issues" class="anchor" href="#issues" aria-hidden="true"><span class="octicon octicon-link"></span></a>Issues</h2>
+
+<p>For questions, bug reports, improve documentation, and feature request please
+search through existing
+<a href="https://github.com/hpedrorodrigues/ADBe/issues">issue</a> and if you don't
+find and answer open a new one <a href="https://github.com/hpedrorodrigues/ADBe/issues/new">here</a>.
+If you need support send me an <a href="mailto:hs.pedro.rodrigues@gmail.com">email</a>. You can also
+contact <a href="https://github.com/hpedrorodrigues">me</a> for any non public concerns.</p>
+
+<h2>
+<a id="references" class="anchor" href="#references" aria-hidden="true"><span class="octicon octicon-link"></span></a>References</h2>
+
+<ul>
+<li><a href="http://www.scala-lang.org/documentation/getting-started.html">Getting started with Scala</a></li>
+<li><a href="http://ruby-doc.org/gettingstarted/">Getting started with Ruby</a></li>
+</ul>
+      </section>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-66231011-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
