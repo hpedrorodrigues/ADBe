@@ -20,7 +20,7 @@ object Messages {
 }
 
 object Commands {
-  val Independents = List("devices", "version", "start-server", "kill-server", "connect", "disconnect", "help")
+  val Independents = List("devices", "version", "start-server", "kill-server", "connect", "disconnect", "help", "uninstall")
   val DevicesInfo = Seq("adb", "devices", "-l")
   val Devices = Seq("adb", "devices")
   val ADB = Seq("adb")
@@ -91,7 +91,8 @@ object Runner {
 
   def main(args: Array[String]) {
     val argsList = args.toList
-    if (args.length == 0) {
+
+    if (argsList.isEmpty) {
       println(Messages.Usage)
     } else if (Commands.Independents.contains(argsList.head) || ADBe.serials.size == 1) {
       ADBe.deferToAdb(argsList)

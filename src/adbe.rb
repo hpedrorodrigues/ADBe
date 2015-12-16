@@ -26,7 +26,7 @@ end
 class Commands
 
   class << self
-    def independents; %w(devices version start-server kill-server connect disconnect help) end
+    def independents; %w(devices version start-server kill-server connect disconnect help uninstall) end
     def devices_info; 'adb devices -l' end
     def devices; 'adb devices' end
     def adb; 'adb' end
